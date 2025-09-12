@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { Metadata } from "next";
 import { lusitana } from "@/app/ui/fonts";
 
 import CardsWrapper from "@/app/ui/dashboard/cards";
@@ -9,6 +10,10 @@ import {
   RevenueChartSkeleton,
   LatestInvoicesSkeleton,
 } from "@/app/ui/skeletons";
+
+export const metadata: Metadata = {
+  title: "Dashboard",
+};
 
 export default async function Page() {
   return (
